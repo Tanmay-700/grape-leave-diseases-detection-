@@ -12,7 +12,7 @@
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Gradio](https://img.shields.io/badge/Frontend-Gradio_UI-FF7C00.svg?logo=gradio&logoColor=white)](https://gradio.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Research Paper](https://img.shields.io/badge/Research_Paper-PDF_Included-red.svg?logo=adobeacrobatreader&logoColor=white)](outputs/final_paper/FoliageAI_Final_Research_Paper.pdf)
+[![Documentation](https://img.shields.io/badge/Documentation-Complete-blue.svg)](#-system-architecture--workflow)
 
 </div>
 
@@ -216,13 +216,13 @@ FoliageAI integrates a built-in pathological diagnostic engine providing targete
 
 ---
 
-## 📄 Published Research Paper & Documentation
+## 📄 Research Study & Technical Documentation
 
-The complete academic methodology, mathematical formulation, and field validation study are published as a formal research document included directly in this repository:
+The complete academic methodology, mathematical formulation, and field validation framework are documented in this repository:
 
-* 📄 **Full Research Paper:** [`outputs/final_paper/FoliageAI_Final_Research_Paper.pdf`](outputs/final_paper/FoliageAI_Final_Research_Paper.pdf)
-* 📋 **Validation & Integrity Report:** [`outputs/final_paper/Research_Paper_Validation_Report.pdf`](outputs/final_paper/Research_Paper_Validation_Report.pdf)
-* 📊 **HTML Camera-Ready Template:** [`outputs/final_paper/paper_template.html`](outputs/final_paper/paper_template.html)
+* 📊 **Camera-Ready Paper Template:** [`paper_template.html`](paper_template.html)
+* 📋 **Methodology Details:** Documented under [System Architecture](#-system-architecture--workflow) and [Two-Phase Transfer Learning](#-two-phase-transfer-learning-strategy).
+* 📈 **Evaluation Artifacts:** Detailed in [Rigorous Benchmark Results](#-rigorous-benchmark-results).
 
 ---
 
@@ -360,16 +360,10 @@ grape-leave-diseases-detection-/
 ├── benchmark_eff_results.txt   # Precision/Recall/F1 benchmark log for EfficientNet (99.21%)
 ├── benchmark_resnet_results.txt# Precision/Recall/F1 benchmark log for ResNet-50 (98.87%)
 │
-├── assets/                     # Publication-grade figures & benchmark visual assets
-│   ├── model_benchmarks.png    # Test accuracy comparison chart across architectures
-│   ├── confusion_matrix_apple.png # Apple test partition confusion matrix
-│   └── training_convergence.png # Phase 1 vs Phase 2 loss/accuracy convergence curves
-│
-└── outputs/
-    └── final_paper/            # Publication-grade research paper & validation report
-        ├── FoliageAI_Final_Research_Paper.pdf
-        ├── Research_Paper_Validation_Report.pdf
-        └── paper_template.html
+└── assets/                     # Publication-grade figures & benchmark visual assets
+    ├── model_benchmarks.png    # Test accuracy comparison chart across architectures
+    ├── confusion_matrix_apple.png # Apple test partition confusion matrix
+    └── training_convergence.png # Phase 1 vs Phase 2 loss/accuracy convergence curves
 ```
 
 ---

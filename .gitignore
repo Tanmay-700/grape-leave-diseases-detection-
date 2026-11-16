@@ -28,9 +28,7 @@ dataset/
 
 # Temporary and evaluation artifacts
 *.log
-outputs/final_paper/temp_*
-outputs/heatmaps/
-outputs/segmentation/
+outputs/
 scratch/
 
 # IDE & OS files
