@@ -375,7 +375,6 @@ grape-leave-diseases-detection-/
 * **Author:** **Tanmay Goyal**
 * **GitHub:** [@Tanmay-700](https://github.com/Tanmay-700)
 * **Email:** [tanmaysgoyal@gmail.com](mailto:tanmaysgoyal@gmail.com)
-* **LinkedIn:** [linkedin.com/in/tanmay-goyal](https://linkedin.com/in/tanmay-goyal)
 
 ### Acknowledgements & Citation
 ```bibtex
