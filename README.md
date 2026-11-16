@@ -216,13 +216,13 @@ FoliageAI integrates a built-in pathological diagnostic engine providing targete
 
 ---
 
-## 📄 Research Study & Technical Documentation
+## 📄 Research Study & Technical Methodology
 
-The complete academic methodology, mathematical formulation, and field validation framework are documented in this repository:
+The academic methodology, mathematical formulation, and field validation framework are fully detailed in this repository:
 
-* 📊 **Camera-Ready Paper Template:** [`paper_template.html`](paper_template.html)
 * 📋 **Methodology Details:** Documented under [System Architecture](#-system-architecture--workflow) and [Two-Phase Transfer Learning](#-two-phase-transfer-learning-strategy).
 * 📈 **Evaluation Artifacts:** Detailed in [Rigorous Benchmark Results](#-rigorous-benchmark-results).
+* 🔬 **Explainability Verification:** Detailed under [Grad-CAM Visual Explanations](#-system-architecture--workflow).
 
 ---
 
@@ -352,13 +352,6 @@ grape-leave-diseases-detection-/
 ├── train.py                    # Modular PyTorch 2-phase training engine with weighted sampling
 ├── train_grape_colab.ipynb     # GPU acceleration notebook for Grape (EffNet-B2 + ResNet-50)
 ├── train_apple_colab.ipynb     # GPU acceleration notebook for Apple (EffNet-B3 + ResNet-50)
-├── prepare_apple_dataset.py    # Stratified multi-source dataset merger (PlantVillage + FGVC8)
-│
-├── eval_grape_test.py          # Comprehensive evaluation on held-out Grape test set
-├── benchmark_eff_apple.py      # Independent benchmark script for Apple EfficientNet-B3
-├── benchmark_resnet_apple.py   # Independent benchmark script for Apple ResNet-50
-├── benchmark_eff_results.txt   # Precision/Recall/F1 benchmark log for EfficientNet (99.21%)
-├── benchmark_resnet_results.txt# Precision/Recall/F1 benchmark log for ResNet-50 (98.87%)
 │
 └── assets/                     # Publication-grade figures & benchmark visual assets
     ├── model_benchmarks.png    # Test accuracy comparison chart across architectures
