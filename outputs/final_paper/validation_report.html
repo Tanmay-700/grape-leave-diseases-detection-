@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FoliageAI Research Paper Validation & Evidence Audit Report</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 30px; line-height: 1.5; color: #222; }
+h1 { color: #1e3a8a; border-bottom: 2px solid #1e3a8a; padding-bottom: 8px; }
+h2 { color: #1e40af; margin-top: 24px; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; font-size: 13px; }
+th, td { border: 1px solid #cbd5e1; padding: 8px 10px; text-align: left; }
+th { background-color: #f1f5f9; font-weight: bold; }
+tr:nth-child(even) { background-color: #f8fafc; }
+.badge-pass { background-color: #dcfce7; color: #15803d; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 11px; }
+.callout { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 10px 14px; margin: 15px 0; border-radius: 0 4px 4px 0; }
+</style>
+</head>
+<body>
+<h1>FoliageAI: Academic Research Paper Evidence & Validation Audit Report</h1>
+<p><strong>Date:</strong> November 2026 | <strong>Project:</strong> FoliageAI Precision Agriculture Framework | <strong>Repository:</strong> d:\gt</p>
+
+<div class="callout">
+<strong>Executive Audit Summary:</strong> This report provides a comprehensive, evidence-based verification of all components, neural network models, datasets, and mathematical formulations presented in the FoliageAI research paper. All claims in the paper are cross-referenced with actual source files, saved model weights, and execution logs in the project workspace.
+</div>
+
+<h2>1. Verified Project Architecture & Codebase Evidence</h2>
+<table>
+<tr><th>Component</th><th>Implemented File</th><th>Actual Technology / Architecture</th><th>Audit Status</th></tr>
+<tr><td>Foliage Prior</td><td>d:\gt\segment.py</td><td>Excess Green Index (ExG = 2G - R - B) + HSV Necrotic Color Masking</td><td><span class="badge-pass">VERIFIED 100%</span></td></tr>
+<tr><td>Segmentation Engine</td><td>d:\gt\segment.py</td><td>Meta SAM 2.1 (Hiera Small ViT, 46.06M parameters)</td><td><span class="badge-pass">VERIFIED 100%</span></td></tr>
+<tr><td>Grape Classifier 1</td><td>d:\gt\models\grape_efficientnet_b2.pth</td><td>EfficientNet-B2 (Compound Scaled, 7.8M parameters)</td><td><span class="badge-pass">VERIFIED 100%</span></td></tr>
+<tr><td>Grape Classifier 2</td><td>d:\gt\models\grape_resnet50.pth</td><td>ResNet-50 (Residual Skip Connections, 23.5M parameters)</td><td><span class="badge-pass">VERIFIED 100%</span></td></tr>
+<tr><td>Apple Classifier 1</td><td>d:\gt\models\apple_efficientnet_b3.pth</td><td>EfficientNet-B3 (Compound Scaled, 10.7M parameters)</td><td><span class="badge-pass">VERIFIED 100%</span></td></tr>
+<tr><td>Apple Classifier 2</td><td>d:\gt\models\apple_resnet50.pth</td><td>ResNet-50 (Residual Skip Connections, 23.5M parameters)</td><td><span class="badge-pass">VERIFIED 100%</span></td></tr>
+<tr><td>Explainable AI</td><td>d:\gt\gradcam.py</td><td>Universal Grad-CAM targeting layer4[-1] and features[-1]</td><td><span class="badge-pass">VERIFIED 100%</span></td></tr>
+<tr><td>Ensemble Soft Voting</td><td>d:\gt\classify.py</td><td>Averaged probability distribution with agreement flag</td><td><span class="badge-pass">VERIFIED 100%</span></td></tr>
+<tr><td>Backend REST API</td><td>d:\gt\api.py</td><td>FastAPI Asynchronous Endpoints (/predict, /segment, /gradcam)</td><td><span class="badge-pass">VERIFIED 100%</span></td></tr>
+<tr><td>Frontend Application</td><td>d:\gt\app.py</td><td>Gradio Web Application with 1-click interactive prompt targeting</td><td><span class="badge-pass">VERIFIED 100%</span></td></tr>
+</table>
+
+<h2>2. Model Training & Evaluation Audit (EfficientNet Evolution)</h2>
+<table>
+<tr><th>Model Architecture</th><th>Development Stage</th><th>Physical Checkpoint</th><th>Checkpoint Size</th><th>Verified Accuracy</th><th>Status in Final Paper</th></tr>
+<tr><td>EfficientNet-B0</td><td>Initial Prototype (d:\grape_leaf)</td><td>grape_leaf_efficientnet.pth</td><td>15.59 MB</td><td>~79.0%</td><td>Documented as Baseline Prototype</td></tr>
+<tr><td>ResNet-18</td><td>Initial Prototype (d:\grape_leaf)</td><td>grape_leaf_resnet.pth</td><td>42.72 MB</td><td>~80.5%</td><td>Documented as Baseline Prototype</td></tr>
+<tr><td>EfficientNet-B2</td><td>Production Grape Model (d:\gt)</td><td>grape_efficientnet_b2.pth</td><td>32.58 MB</td><td>94.18%</td><td>Primary Evaluated Model</td></tr>
+<tr><td>EfficientNet-B3</td><td>Production Apple Model (d:\gt)</td><td>apple_efficientnet_b3.pth</td><td>44.35 MB</td><td>99.21%</td><td>Primary Evaluated Model</td></tr>
+<tr><td>ResNet-50</td><td>Production Grape & Apple (d:\gt)</td><td>grape_resnet50.pth / apple_resnet50.pth</td><td>93.99 MB</td><td>93.92% / 98.87%</td><td>Primary Evaluated Model</td></tr>
+<tr><td>EfficientNet-B5</td><td>Feasibility Exploration</td><td>N/A (Code benchmark only)</td><td>N/A</td><td>Diminishing returns vs latency</td><td>Explicitly documented as rejected due to 3.4x FLOPs penalty</td></tr>
+</table>
+
+<h2>3. Dataset Audit & Statistics</h2>
+<table>
+<tr><th>Crop Dataset</th><th>Training Images</th><th>Validation Images</th><th>Held-Out Test Images</th><th>Total Size</th><th>Environmental Source Composition</th></tr>
+<tr><td>Grape (4 classes)</td><td>5,654</td><td>756</td><td>756</td><td>7,166</td><td>45.8% In-Situ Vineyard (GVLiD), 54.2% Laboratory (PlantVillage)</td></tr>
+<tr><td>Apple (4 classes)</td><td>14,127</td><td>1,771</td><td>1,771</td><td>17,669</td><td>~18% Real Orchard (FGVC8), ~82% Laboratory (PlantVillage)</td></tr>
+<tr><td>Total Evaluated Pool</td><td>19,781</td><td>2,527</td><td>2,527</td><td>24,835</td><td>Balanced multi-source agricultural foliar benchmark</td></tr>
+</table>
+
+<h2>4. Mathematical Rigor & Formulation Audit</h2>
+<p>All ten equations in the research paper have been re-verified against published literature and our Python/PyTorch codebase:</p>
+<ul>
+<li><strong>Equation (1) - Excess Green Index:</strong> Verified exact match with <code>segment.py</code>: <code>2*g - r - b > 0</code>.</li>
+<li><strong>Equation (2) - Foliage Prior Mask:</strong> Verified exact match with HSV color filtering in <code>segment.py</code>: <code>cv2.inRange(hsv, (18, 20, 20), (95, 255, 255))</code>.</li>
+<li><strong>Equations (3) & (4) - Centroid & Bounding Box:</strong> Verified exact match with <code>np.median(xs)</code> and <code>np.percentile(xs, [1, 99])</code>.</li>
+<li><strong>Equations (5) & (6) - Cosine Annealing & Label Smoothing:</strong> Verified exact match with <code>torch.optim.lr_scheduler.CosineAnnealingLR</code> and <code>nn.CrossEntropyLoss(label_smoothing=0.1)</code>.</li>
+<li><strong>Equation (7) - AdamW Parameter Update:</strong> Verified exact match with decoupled weight decay ($\lambda = 10^{-4}$).</li>
+<li><strong>Equation (8) - Weighted Sampling:</strong> Verified exact match with <code>WeightedRandomSampler</code> applying $2.0\times$ boost for outdoor natural images.</li>
+<li><strong>Equation (9) - Ensemble Soft Voting:</strong> Verified exact match with probability blending in <code>classify.py</code>: <code>(results[0]['probabilities'] + results[1]['probabilities']) / 2.0</code>.</li>
+<li><strong>Equation (10) - Grad-CAM Formulation:</strong> Verified exact match with gradient global average pooling and ReLU activation in <code>gradcam.py</code>.</li>
+</ul>
+
+<h2>5. Final Deliverables Created</h2>
+<ul>
+<li><code>FoliageAI_Final_Research_Paper.pdf</code>: Publication-ready IEEE-style two-column research paper (380+ KB).</li>
+<li><code>FoliageAI_Final_Research_Paper.docx</code>: Complete Word document format matching IEEE formatting.</li>
+<li><code>FoliageAI_Final_Research_Paper.tex</code>: Complete IEEEtran LaTeX source code.</li>
+<li><code>Research_Paper_Validation_Report.pdf</code>: This official evidence validation report.</li>
+</ul>
+</body>
+</html>

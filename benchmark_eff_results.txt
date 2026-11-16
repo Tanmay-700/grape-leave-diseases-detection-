@@ -1,0 +1,33 @@
+============================================================
+[APPLE] EFFICIENTNET-B3 TEST EVALUATION RESULTS
+Total Test Images: 1771
+Overall Accuracy:  99.21%
+Inference Time:    201.5s (113.8ms per image)
+============================================================
+
+Detailed Classification Report:
+                                  precision    recall  f1-score   support
+
+              Apple — Apple Scab     0.9891    0.9945    0.9918       547
+Apple — Black Rot / Frogeye Spot     0.9870    0.9921    0.9896       382
+        Apple — Cedar Apple Rust     0.9953    0.9953    0.9953       214
+                 Apple — Healthy     0.9968    0.9889    0.9928       628
+
+                        accuracy                         0.9921      1771
+                       macro avg     0.9920    0.9927    0.9924      1771
+                    weighted avg     0.9921    0.9921    0.9921      1771
+
+
+Confusion Matrix:
+True Class                          | P:0 | P:1 | P:2 | P:3
+-----------------------------------------------------------
+Apple — Apple Scab                  |  544 |    2 |    0 |    1
+Apple — Black Rot / Frogeye Spot    |    2 |  379 |    0 |    1
+Apple — Cedar Apple Rust            |    0 |    1 |  213 |    0
+Apple — Healthy                     |    4 |    2 |    1 |  621
+
+Class Index Legend:
+  P:0 = Apple — Apple Scab
+  P:1 = Apple — Black Rot / Frogeye Spot
+  P:2 = Apple — Cedar Apple Rust
+  P:3 = Apple — Healthy

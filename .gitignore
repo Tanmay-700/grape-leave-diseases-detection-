@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Model checkpoints & large binary weights (>100MB rejected by GitHub)
+*.pth
+*.pt
+*.h5
+*.keras
+*.onnx
+models/
+sam2_weights/
+
+# Datasets and archives
+data/
+dataset/
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Temporary and evaluation artifacts
+*.log
+outputs/final_paper/temp_*
+outputs/heatmaps/
+outputs/segmentation/
+scratch/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
